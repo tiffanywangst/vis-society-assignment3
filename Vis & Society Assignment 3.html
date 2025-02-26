@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///Users/tiffanywangst/Desktop/Vis%20&%20Society%20Assignment%203.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Vis &amp; Society Assignment 3</title>
+	<link rel="stylesheet" href="./Vis &amp; Society Assignment 3_files/report.css">
+</head>
+
+<body class="vsc-initialized">
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Critique &amp; Redesign
+		</h1>
+
+		<p>
+			<strong>Tiffany Wang</strong> — <em>twangst@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Reading &amp; Critique</h2>
+
+			<figure>
+				<img src="./Vis &amp; Society Assignment 3_files/covid-spiral.png" alt="" width="800">
+			</figure>
+
+			<p>
+				Insights about the data/visualization:
+			</p>
+
+			<ul>
+				<li>The design shows that the first occurrence of COVID-19 happened around March 2020, and lasted at least until 2022.</li>
+				<li>According to the graph, the largest increase in COVID-19 cases occurred in January 2022, which was when the Omicron variant happened.
+</li>
+				<li>The design shows multiple peaks over time, suggesting that COVID-19 cases followed a cyclical pattern with surges occurring in different waves, particularly around the winter months, since virus was easier to spread during cold weather. And case numbers decline in summer months, indicating potential seasonal effects on COVID-19 transmission.
+</li>
+			</ul>
+
+			<p>
+				Design Critique:
+			</p>
+
+			<ul>
+				<li>The spiral pattern is very eye-catchy in terms of visualizations, but it may not be the most immediately intuitive way to present the data. The spiral shape, in some way, distorts distances between data points. Even though the number of COVID-19 cases are quantized in the design, the comparison between quantities is not straightforward for the audience to interpret. A better way may be a time-series line chart, which ​​might allow for easier comparisons between peaks.</li>
+				<li>The largest peak (Omicron in early 2022) is visually squeezed toward the outer edge, which makes it harder to compare against earlier waves. The spiral shape might also shift the audience’s attention to the middle or central area of the pattern. While the visualization effectively conveys the cyclical nature of COVID-19 surges, it requires some effort for the general audience to interpret, especially for those unfamiliar with radial charts.</li>
+				<li>The labeling could also be improved. Even though key time points (e.g., January, April, July, October) are marked, additional annotations could help highlight where key surges are. The year labels (2020, 2021, 2022) and the placement of "Jan." at the top help provide some orientation, but an arrow or additional annotation explicitly stating "Start here" at the center could improve clarity and guide the audience where to start reading. The lack of a conventional timeline might make it harder for readers to pinpoint exact dates of key peaks and compare trends across years.
+
+</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Visualization Sketches</h2>
+
+      <figure>
+				<img src="./Vis &amp; Society Assignment 3_files/Figure_1.png" alt="" width="800">
+				<figcaption>Time-series graph for new COVID-19 cases in the US</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>Aim to present COVID-19 cases overall trend of rising and falling over time in a linear way, so that it is more intuitive for the audience to read the time-series graph
+</li>
+				<li>Help the audience quickly grasp where the COVID-19 cases peaks occurred, easier to compare different time periods</li>
+				<li>However, it doesn’t emphasize seasonality as much as spiral does. It’s also harder to compare case numbers across different years. For example, how have COVID-19 cases in 2021 changed compared to those in 2020?
+</li>
+			</ul>
+
+			<figure>
+				<img src="./Vis &amp; Society Assignment 3_files/Figure_2.png" alt="" width="800">
+				<figcaption>Stacked time-series graph for new COVID-19 cases in the US</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>Aim to create a seasonal comparison by aligning multiple years on the same timeline. By highlighting repeating patterns across different years, help the audience see how each year’s peaks compare during the same months.</li>
+				<li>Graph is better-structured than spiral graph that emphasizes the overall yearly trend of rising and falling
+</li>
+				<li>However, overlapping lines in the graph may cause readability issues. It might be improved by using a shaded area instead of multiple lines.
+</li>
+			</ul>
+
+			<figure>
+				<img src="./Vis &amp; Society Assignment 3_files/Figure_3.png" alt="" width="800">
+				<figcaption>Radial chart for new COVID-19 cases in the US</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>Keeps the unique and engaging circular format while making year-to-year comparisons clearer.</li>
+				<li>At the same time, emphasizes seasonal trends by aligning months across years.
+</li>
+				<li>However, it might not be as intuitive for the audience to read and interpret as the time-series graph. It also does not show daily trends within a month. The monthly bars do not show continuity in representing the number of new COVID-19 cases.
+</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Visualization Design</h2>
+      
+			<figure>
+				<img src="./Vis &amp; Society Assignment 3_files/Figure_4.png" alt="" width="800">
+				<figcaption>Log-Scale COVID-19 trends in the US</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2>Design Process &amp; Design Decisions</h2>
+
+			<p>The visualization is designed to effectively communicate both the cumulative progression and daily changes in COVID-19 cases, deaths, and recoveries in the U.S. By using filled areas for cumulative counts, the visualization highlights the overall trends over time, thus emphasizing the long-term impact of the pandemic across several years. The choice of a logarithmic scale ensures that variations across different magnitudes are visible, which prevents the dominance of extremely large or small values. Additionally, overlaying dashed lines for new cases allows viewers to identify short-term fluctuations, identifying peaks and declines in infection, mortality, and recovery rates. The color palette was intentionally chosen with lighter shades for cumulative cases to maintain readability and softer, yet distinct, dashed lines for daily cases to avoid visual clutter while preserving clarity.
+
+</p>
+
+      <p>The decision to use filled areas for cumulative data and dashed lines for daily changes reflects an attempt to balance historical trends with real-time fluctuations. However, we notice that there are a few data inconsistencies or reporting anomalies, as seen in the oscillating recovered case line, which may obscure certain trends. By focusing on previous critique and brainstorming, possible processes, we aim to select a robust visualization method that minimizes distortion while maximizing insight. While the final design addresses concerns about visibility and interpretability, trade-offs remain in terms of emphasizing different aspects of the dataset.
+</p><h3>Reflection</h3>
+
+      <p>The final visualization design reflects key critiques from the earlier sketches. Initially, the spiral graph, while visually engaging, lacked clarity and data interpretation in direct comparisons between different time periods. Later proposed sketches highlighted different aspects of the data, such as enhancing readability by using a linear time-series chart for clarity, a stacked seasonal comparison for highlighting annual trends, and a circular format to preserve the seasonal representation.
+</p>
+		<p>In the final design, a filled area approach was chosen to depict cumulative COVID-19 cases, deaths, and recoveries. This ensures clear visibility of long-term trends. A logarithmic scale was incorporated to prevent extreme value dominance, and dashed lines were used for daily fluctuations to preserve audience interpretability. While the redesign process improved accessibility and clarity, some trade-offs remained. For example, the visualization may not provide the same level of seasonality emphasis as the spiral format. Additionally, certain data inconsistencies, such as oscillations in recovered case counts, could introduce challenges or confusion in interpretation.
+</p><p>The critique-by-redesign process reveals key challenges in effectively communicating complex data. It highlights the difficulty of balancing intuitive readability with deeper insights, as well as the trade-offs between emphasizing seasonality, data continuity, and comparison across years. While the final design improves upon some of the initial critiques, the iterative process implies that it is hard to find a single design that can fully optimize for all aspects.
+</p></section>
+	</main>
+
+
+</body></html>
